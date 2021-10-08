@@ -1,0 +1,88 @@
+
+<div class="text-center">
+  <h1>Produtos orgânicos e saudáveis!</h1>
+</div>
+
+
+
+<div class="text-left mt-5">
+  <h2>Promoções</h2>
+</div>
+
+<div class="row">
+
+  <div class="col-sm-4 mb-3" *ngFor="let obj of produtosLista">
+
+    <div class="card" style="width: 18rem;">
+      <img [src]="obj.imagem" class="card-img-top" alt="produto orgânico">
+      <div class="card-body">
+        <h5 class="card-title"> {{obj.nome}} </h5>
+        <p class="card-text"> {{obj.descricao}}.</p>
+        <h6>R$ {{obj.valorVenda}}</h6>
+
+        <a [routerLink]="['/produto-detalhes', obj.id]" class="btn btn-danger">
+          Comprar
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="text-left mt-5">
+  <h2>Verduras</h2>
+</div>
+
+<div class="row">
+
+  <div class="col-sm-4">
+
+    <div class="card" style="width: 18rem;">
+      <img src="./../../assets/img/alface-01.jpg" class="card-img-top" alt="produto orgânico">
+      <div class="card-body">
+        <h5 class="card-title">Alface</h5>
+        <p class="card-text">Produto orgânico (livre de agrotóxicos).</p>
+        <h6>R$ 2,50</h6>
+        <a href="#" class="btn btn-danger">Comprar</a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-sm-4">
+
+    <div class="card" style="width: 18rem;">
+      <img src="./../../assets/img/alface-01.jpg" class="card-img-top" alt="produto orgânico">
+      <div class="card-body">
+        <h5 class="card-title">Alface</h5>
+        <p class="card-text">Produto orgânico (livre de agrotóxicos).</p>
+        <h6>R$ 2,50</h6>
+        <a href="#" class="btn btn-danger">Comprar</a>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="col-sm-4">
+
+    <div class="card" style="width: 18rem;">
+      <img src="./../../assets/img/alface-01.jpg" class="card-img-top" alt="produto orgânico">
+      <div class="card-body">
+        <h5 class="card-title">Alface</h5>
+        <p class="card-text">Produto orgânico (livre de agrotóxicos).</p>
+        <h6>R$ 2,50</h6>
+        <a href="#" class="btn btn-danger">Comprar</a>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

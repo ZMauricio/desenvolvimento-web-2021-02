@@ -1,0 +1,12 @@
+{
+  "produtos": [
+    {
+      "id": 2,
+      "nome": "Alface",
+      "valorVenda": 5,
+      "status": false,
+      "descricao": "Alface importado",
+      "imagem": "./../../assets/img/pimentao-01.jpg"
+    }
+  ]
+}

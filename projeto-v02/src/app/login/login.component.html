@@ -1,0 +1,42 @@
+
+<div class="row justify-content-center">
+
+  <div class="col-9">
+
+    <div class="text-center">
+
+      <h2> {{ titulo }} </h2>
+
+      <h1>Acesse a sua conta!</h1>
+
+    <!--
+      <img [src]="imagemSRC" width="50%">
+    -->
+
+      <h4>{{login}}</h4>
+
+    </div>
+
+
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="login">
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Password</label>
+        <input type="password" class="form-control" id="senha">
+      </div>
+
+      <button (click)="mensagem()" type="submit" class="btn btn-success btn-block">
+        Logar
+      </button>
+
+      <button type="submit" class="btn btn-secondary btn-block">Cadastrar</button>
+
+    </form>
+
+  </div>
+
+</div>
