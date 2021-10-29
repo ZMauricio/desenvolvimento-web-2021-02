@@ -1,0 +1,25 @@
+
+<div class="row justify-content-center mt-3">
+  <div class="col-9">
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="produto.nome">
+      </div>
+
+      <div class="form-group">
+        <label for="preco">Preço</label>
+        <input type="number" class="form-control" id="preco" name="preco" [(ngModel)]="produto.valorCompra">
+      </div>
+
+      <div class="form-group">
+        <label for="descricao">Descrição</label> <br>
+        <textarea name="descricao" cols="30" [(ngModel)]="produto.descricao"></textarea>
+      </div>
+
+
+      <button type="button" (click)="cadastrar()" class="btn btn-success">Salvar</button>
+
+    </form>
+  </div>
+</div>

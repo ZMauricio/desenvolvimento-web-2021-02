@@ -1,0 +1,45 @@
+
+<!--
+<div class="caixa" style="background: blue;" *ngIf="exibir">
+  Box 1
+</div>
+
+<div class="caixa" style="background: red;" *ngIf="!exibir">
+  Box 2
+</div>
+
+<button class="btn btn-primary" (click)="mudar()">
+  Mudar
+</button>
+
+
+<ul>
+  <li *ngFor="let obj of alunosTemplate; let i= index; let ehImpar = odd">
+
+   <div [ngClass]="{'impar-fonte': ehImpar, 'par-fonte': !ehImpar}">
+
+    {{ i+1 }} - {{obj.nome}} faz {{obj.curso}}, indice: {{ehImpar}}.
+   </div>
+
+  </li>
+</ul>
+
+<button class="btn btn-primary" (click)="filtrar()">
+  Filtrar
+</button>
+
+-->
+
+
+<h1>Escolha um curso:</h1>
+<select [(ngModel)]="selecionado">
+  <option *ngFor="let opcao of cursos">{{opcao}}</option>
+</select>
+ 
+<div [ngSwitch]="selecionado">
+  <div class="bloco1" *ngSwitchCase="cursos[0]">{{cursos[0]}}</div>
+  <div class="bloco2" *ngSwitchCase="cursos[1]">{{cursos[1]}}</div>
+  <div class="bloco3" *ngSwitchCase="cursos[2]">{{cursos[2]}}</div>
+  <div class="bloco4" *ngSwitchDefault>{{cursos[3]}}</div>
+</div>
+

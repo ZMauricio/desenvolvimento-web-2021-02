@@ -1,0 +1,51 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "pimentão edit",
+      "descricao": "produto orgânico edit",
+      "valorCompra": 10,
+      "status": true,
+      "imagem": "./../../assets/img/pimentao-organico.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Alface",
+      "descricao": "produto orgânico",
+      "valorCompra": 6.5,
+      "status": true,
+      "imagem": "./../../assets/img/pimentao-organico.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Jiló",
+      "descricao": "Vegetal orgânico",
+      "valorCompra": 4,
+      "status": false,
+      "imagem": "./../../assets/img/pimentao-organico.jpg"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Monkey D. Luffy",
+      "email": "mugiwara@onepiece.com",
+      "senha": "123456",
+      "cidade": "Water Seven"
+    },
+    {
+      "id": 2,
+      "nome": "Sanji",
+      "email": "sanji@onepiece.com",
+      "senha": "cooking",
+      "cidade": "Water Seven"
+    },
+    {
+      "id": 3,
+      "nome": "Quico",
+      "email": "quico@televisa.com.mx",
+      "senha": "bolaquadrada",
+      "cidade": "Cidade del Mexico"
+    }
+  ]
+}

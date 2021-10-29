@@ -1,0 +1,47 @@
+
+<div class="text-center">
+  <h2>Detalhes do produto</h2>
+</div>
+
+
+<div class="row justify-content-center">
+
+  <div class="col-9">
+    <form>
+
+      <div class="text-center">
+        <img [src]="produto.imagem" alt="Foto do produto" width="20%">
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" [ngModel]="produto.nome">
+      </div>
+
+      <div class="form-group">
+        <label for="preco">Preço</label>
+        <input type="number" class="form-control" id="preco" name="preco" [ngModel]="produto.valorCompra" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="descricao">Descrição</label><br>
+        <textarea>{{produto.descricao}}</textarea>
+      </div>
+
+
+      <button type="submit" class="btn btn-success">Comprar</button>
+
+      <button type="button" class="btn btn-secondary"
+      [routerLink]="['/produto-update', produto.id]">
+        Editar
+      </button>
+
+    </form>
+  </div>
+
+
+
+
+</div>
+
+
