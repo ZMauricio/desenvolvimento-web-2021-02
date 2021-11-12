@@ -1,0 +1,54 @@
+
+<div class="row justify-content-center">
+
+  <div class="col-9">
+
+    <div class="text-center">
+
+      <h2> {{ titulo }} </h2>
+
+      <h1>Acesse a sua conta!</h1>
+
+    <!--
+      <img [src]="imagemSRC" width="50%">
+    -->
+
+    </div>
+
+
+    <form #formulario="ngForm" (ngSubmit)="realizarLogin(formulario)">
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email"
+        [(ngModel)]="usuario.email" #email="ngModel" required>
+
+        <div class="alert alert-danger" *ngIf="!email.valid && email.touched">
+          O e-mail é obrigatório!
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Password</label>
+        <input type="password" class="form-control" id="senha" name="senha"
+        [(ngModel)]="usuario.senha" #senha="ngModel" required>
+
+        <div class="alert alert-danger" *ngIf="!senha.valid && senha.touched">
+          A senha é obrigatória
+        </div>
+      </div>
+
+      <button [disabled]="!formulario.valid" type="submit" class="btn btn-success btn-block">
+        Logar
+      </button>
+
+      <button [routerLink]="['/signin']" type="button" class="btn btn-secondary btn-block">
+        Registrar
+      </button>
+
+    </form>
+
+  </div>
+
+</div>

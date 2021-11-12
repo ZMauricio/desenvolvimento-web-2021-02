@@ -1,0 +1,46 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Repolho",
+      "valorVenda": 6,
+      "status": false,
+      "descricao": "Repolho importado",
+      "imagem": "./../../assets/img/pimentao-01.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Couve-flor",
+      "valorVenda": 10,
+      "status": false,
+      "descricao": "Vegetal",
+      "imagem": "./../../assets/img/pimentao-01.jpg"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Chapolin Colorado",
+      "email": "chapolin@televisa.com.mx",
+      "senha": "marretabionica",
+      "idade": 40,
+      "cidade": "Ciudad del Mexico"
+    },
+    {
+      "id": 2,
+      "nome": "Don Ramon Valdez",
+      "email": "madruga@televisa.com.mx",
+      "senha": "123456",
+      "idade": 50,
+      "cidade": "Ciudad del Mexico"
+    },
+    {
+      "id": 3,
+      "nome": "Tony Stark",
+      "email": "tony@avengers.com",
+      "senha": "123456",
+      "idade": 54,
+      "cidade": "New York"
+    }
+  ]
+}

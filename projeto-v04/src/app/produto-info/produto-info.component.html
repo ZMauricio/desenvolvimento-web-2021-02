@@ -1,0 +1,47 @@
+
+<div class="row justify-content-center mt-5 mb-5">
+
+  <div class="col-9">
+
+
+    <form>
+
+      <div class="text-center">
+        <img [src]="produto.imagem" width="30%">
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" [ngModel]="produto.nome" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="preco">Preço</label>
+        <input type="number" class="form-control" id="preco" name="preco" [ngModel]="produto.valorVenda" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Descrição</label> <br>
+        <textarea cols="70" readonly>{{produto.descricao}}</textarea>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-success btn-block">
+            Comprar
+          </button>
+        </div>
+      </div>
+
+
+
+
+    </form>
+
+
+
+  </div>
+
+</div>
+

@@ -1,0 +1,48 @@
+
+<div class="row mt-3 mb-3">
+
+  <div class="mt-2 mb-2">
+    <div class="col-3">
+      <button class="btn btn-primary" [routerLink]="['/novo']">
+        Novo
+      </button>
+    </div>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#Código</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Valor</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let produto of listaProdutos">
+        <th scope="row">{{produto.id}}</th>
+        <td>
+          <a [routerLink]="['/detalhes', produto.id]">
+            {{produto.nome}}
+          </a>
+        </td>
+        <td>{{produto.descricao}}</td>
+        <td>{{produto.valorVenda}}</td>
+        <td>
+          <button class="btn btn-warning" [routerLink]="['/update', produto.id]">
+            Editar
+          </button>
+          <button class="btn btn-danger ml-1" (click)="deletar(produto.id)">
+            Deletar
+          </button>
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+</div>
+

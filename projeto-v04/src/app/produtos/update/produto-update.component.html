@@ -1,0 +1,56 @@
+
+<div class="row justify-content-center mt-5 mb-5">
+  <div class="col-9">
+    <form>
+      <div class="text-center">
+        <img [src]="produto.imagem" width="30%">
+      </div>
+
+      <div class="form-group">
+        <label for="codigo">Código</label>
+        <input type="number" class="form-control" id="codigo" name="codigo"
+        [ngModel]="produto.id" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome"
+        [(ngModel)]="produto.nome">
+      </div>
+
+      <div class="form-group">
+        <label for="preco">Preço</label>
+        <input type="number" class="form-control" id="preco" name="preco"
+        [(ngModel)]="produto.valorVenda">
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status</label>
+        <input type="text" class="form-control" id="status" name="status"
+        [(ngModel)]="produto.status">
+      </div>
+
+      <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <textarea class="form-control" id="descricao" name="descricao" [(ngModel)]="produto.descricao"></textarea>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <button [routerLink]="['/painel']" class="btn btn-secondary btn-block">
+            Voltar
+          </button>
+        </div>
+
+        <div class="col-6">
+          <button class="btn btn-success btn-block" (click)="atualizar()">
+            Salvar
+          </button>
+        </div>
+      </div>
+
+
+
+    </form>
+  </div>
+</div>
