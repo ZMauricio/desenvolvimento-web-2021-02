@@ -1,0 +1,88 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Pimentão vermelho",
+      "descricao": "produto orgânico edit",
+      "valorCompra": 10,
+      "status": true,
+      "imagem": "./../../assets/img/pimentao-organico.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Limão",
+      "descricao": "Ótimo para sucos",
+      "valorCompra": 15,
+      "status": false,
+      "imagem": "./../../assets/img/pimentao-organico.jpg"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Monkey D. Luffy",
+      "email": "mugiwara@onepiece.com",
+      "senha": "123456",
+      "cidade": "Water Seven"
+    },
+    {
+      "id": 2,
+      "nome": "Sanji",
+      "email": "sanji@onepiece.com",
+      "senha": "cooking",
+      "cidade": "Water Seven"
+    },
+    {
+      "id": 3,
+      "nome": "Quico",
+      "email": "quico@televisa.com.mx",
+      "senha": "bolaquadrada",
+      "cidade": "Cidade del Mexico"
+    },
+    {
+      "id": 4,
+      "nome": "",
+      "email": "",
+      "senha": "",
+      "cidade": ""
+    },
+    {
+      "id": 5,
+      "nome": "",
+      "email": "",
+      "senha": "",
+      "cidade": ""
+    }
+  ],
+  "oracoes": [
+    {
+      "id": 1,
+      "nome": "Ave Maria",
+      "tipo": "mariana"
+    },
+    {
+      "id": 2,
+      "nome": "Ave Maria",
+      "tipo": "mariana"
+    },
+    {
+      "id": 2,
+      "nome": "Pai Nosso",
+      "tipo": "tradicional"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João do Pulo (Atleta)",
+      "email": "joao.pulo.atleta@gmail.com",
+      "senha": "123456",
+      "rua": "Rua dos esportes",
+      "numero": 101,
+      "bairro": "Olímpico",
+      "cidade": "Rio de Janeiro",
+      "estado": "Rio de Janeiro",
+      "cep": "40000-999"
+    }
+  ]
+}

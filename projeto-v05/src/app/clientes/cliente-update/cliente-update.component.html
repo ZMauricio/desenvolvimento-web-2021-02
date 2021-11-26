@@ -1,0 +1,60 @@
+<div class="text-center">
+  <h3>Atualização do cliente</h3>
+</div>
+
+<div class="justify-content-center">
+
+  <form>
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="cliente.nome">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="cliente.email">
+    </div>
+
+    <div class="form-group">
+      <label for="rua">Rua</label>
+      <input type="text" class="form-control" id="rua" name="rua" [(ngModel)]="cliente.rua">
+    </div>
+
+    <div class="form-group">
+      <label for="bairro">Bairro</label>
+      <input type="text" class="form-control" id="bairro" name="bairro" [(ngModel)]="cliente.bairro">
+    </div>
+
+    <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <input type="text" class="form-control" id="cidade" name="cidade" [(ngModel)]="cliente.cidade">
+    </div>
+
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" class="form-control" id="estado" name="estado" [(ngModel)]="cliente.estado">
+    </div>
+
+    <div class="form-group">
+      <label for="cep">CEP</label>
+      <input type="text" class="form-control" id="cep" name="cep" [(ngModel)]="cliente.cep">
+    </div>
+
+
+    <div class="row">
+      <div class="col-6">
+        <button type="button" (click)="deletar()" class="btn btn-danger btn-block">Excluir</button>
+      </div>
+
+      <div class="col-6">
+        <button type="button" (click)="editar()" class="btn btn-success btn-block">Salvar</button>
+      </div>
+    </div>
+
+
+
+  </form>
+
+</div>
+
+
