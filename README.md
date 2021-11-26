@@ -1,6 +1,6 @@
 # Desenvolvimento Web 2021-02
 
-## Projeto desenvolvimento durante as aulas da disciplina de desenvolvimento Web
+## Projeto desenvolvido durante as aulas da disciplina de desenvolvimento Web
 * Este projeto utiliza a seguintes tecnologias:
 	* Angular 12;
 	* TypeScript e
